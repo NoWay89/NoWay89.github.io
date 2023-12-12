@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kreitech</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <span id="kreiPart">Krei</span><span id="techPart">Tech</span>
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Your main content goes here -->
+      <h1>Welcome to Kreitech</h1>
+      <p>This is a simple static page for Kreitech.</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quos
+        deleniti consequuntur ad itaque animi voluptatibus cupiditate quaerat,
+        eos doloribus minima distinctio error id facere laboriosam nostrum atque
+        ipsa numquam recusandae. Ad laboriosam facere perspiciatis aliquam
+        nihil, cumque modi ratione qui, quod voluptas doloribus cum accusantium
+        suscipit necessitatibus aliquid non! Et provident alias dignissimos
+        obcaecati necessitatibus perferendis debitis molestiae exercitationem
+        quidem delectus illo modi, optio quae eligendi corporis ut vitae. Harum
+        nulla consequuntur temporibus tempore veniam, cum expedita, deleniti
+        inventore similique natus optio saepe facilis possimus nostrum commodi
+        ut, necessitatibus dignissimos alias est tempora porro omnis. Blanditiis
+        quos et aliquid.
+      </p>
+      <img src="images/cen1.png" alt="design1">
+      <p>
+        Lorem ipsum dolor sit, amet <span><a  id="canRedir" href="https://www.canva.com/design/DAF2woYGreU/l9_wU977Psxq72iAc7-4dg/edit?utm_content=DAF2woYGreU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Kreitech</a></span> adipisicing elit. Ab illum saepe
+        perferendis reprehenderit a voluptates minima aliquid excepturi aliquam,
+        ea et incidunt! Itaque, perspiciatis impedit laborum iste a asperiores
+        unde rem laboriosam quos excepturi labore ab, aliquid earum alias. Est
+        voluptatibus non unde deserunt quisquam debitis odit blanditiis, laborum
+        adipisci, delectus nihil expedita, ullam fugit a necessitatibus itaque
+        magni ipsum? Aut, expedita! Mollitia assumenda soluta dolorum esse
+        dolorem at dolore eveniet quisquam officiis, nam quos doloribus
+        repellendus culpa inventore iure quam sunt neque deleniti, molestias,
+        eius ducimus. Sint, aspernatur? Dolorum quas molestiae at quisquam, unde
+        voluptatibus eveniet mollitia atque incidunt possimus eius accusamus,
+        sed tempore voluptate architecto sint eligendi minima praesentium
+        recusandae. Assumenda a voluptates illum sapiente veritatis unde, iure
+        architecto nam! Illo neque iusto, in id, quis quae dolores numquam
+        blanditiis laudantium facere non cupiditate, eius fugit sequi nesciunt
+        qui soluta nulla natus quo cum. Molestias culpa modi aliquam fugit
+        molestiae ex quod, hic voluptatum natus optio numquam. Tempora
+        repudiandae libero culpa beatae nihil incidunt. Est officiis, temporibus
+        maiores vero doloremque natus eius, asperiores assumenda omnis excepturi
+        quod, harum tenetur aspernatur deserunt autem voluptates eum? Labore
+        explicabo, amet officiis, pariatur eos ab voluptas, unde excepturi rerum
+        voluptate magnam est.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
+        doloribus error ex, deserunt libero labore nesciunt ipsa illum enim
+        deleniti fuga facilis obcaecati sequi ad dolorum? A laboriosam officia
+        eaque eos, neque iste eligendi repellat hic fugit ut dolores in
+        voluptate ducimus, laborum reiciendis itaque? Dolorum, possimus minima
+        asperiores totam soluta quod aliquid, nam voluptas, libero cupiditate
+        commodi error delectus sed tenetur corporis autem? Nihil necessitatibus
+        libero reprehenderit ratione a dignissimos quasi ipsa, veritatis nulla,
+        voluptatibus praesentium labore voluptas pariatur non autem expedita id?
+        At aliquam, harum ratione beatae iste repellat suscipit est qui ducimus
+        quas voluptate quidem? Nisi eligendi modi aperiam debitis veniam quia
+        consequatur, numquam iste dolores incidunt sit earum praesentium,
+        consequuntur esse id quod est quas harum porro, tempore sed! Sed
+        doloribus, id omnis repudiandae expedita corrupti nostrum provident
+        blanditiis eaque nam aliquid necessitatibus reprehenderit nisi
+        doloremque ipsa explicabo, illo eum eligendi laboriosam aliquam delectus
+        accusantium. Minus, commodi odit? Nobis, numquam aspernatur sed aperiam
+        deleniti porro debitis repellat, quo mollitia, eos quibusdam ipsam. Aut
+        eos quaerat officia doloremque. Beatae doloremque, debitis possimus
+        molestiae maiores tempore dolorem, dolore necessitatibus iure voluptas
+        rerum enim facilis dicta eligendi rem accusamus ducimus unde magnam
+        minima iste, labore corrupti consequatur laborum. Eligendi.
+      </p>
+    </main>
+
+    <footer id="page-footer">&copy; 2023 Kreitech. All rights reserved.</footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var main = document.querySelector("main");
+        var footer = document.getElementById("page-footer");
+
+        function adjustMainMinHeight() {
+          main.style.minHeight =
+            window.innerHeight - header.offsetHeight + "px";
+        }
+
+        window.addEventListener("resize", adjustMainMinHeight);
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 0) {
+            footer.style.display = "block";
+          } else {
+            footer.style.display = "none";
+          }
+        });
+
+        // Initial adjustment
+        adjustMainMinHeight();
+      });
+    </script>
+  </body>
+</html>
